@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            // 确认可执行文件的路径和名称
+            "program": "${workspaceFolder}/exe/${workspaceFolderBasename}.exe",
+            "args": [],
+            // "program": "C:Windows/System32/cmd.exe",
+            // "args": [
+            //     "/c",
+            //     "${workspaceFolder}/exe/${workspaceFolderBasename}.exe",
+            //     "&",
+            //     "pause"
+            // ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}", // 确认调试时的当前工作目录
+            "environment": [],
+            "externalConsole": true, // 设置是否使用外部控制台
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            // 确认预运行任务名称
+            "preLaunchTask": "build",
+            // 更改为你的 gdb 的实际路径
+            "miDebuggerPath": "D:/mingw64/bin/gdb.exe"
+        }
+    ]
+}

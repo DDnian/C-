@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "cppbuild",
+            "command": "D:/mingw64/bin/g++.exe",
+            "args": [
+                "-g",
+                "${workspaceFolder}/source/*.cpp",
+                "-I${workspaceFolder}/header",
+                "-o",
+                "${workspaceFolder}/exe/${workspaceFolderBasename}.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "编译器: D:/mingw64/bin/g++.exe"
+        }
+    ]
+}
