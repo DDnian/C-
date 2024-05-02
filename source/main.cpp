@@ -1,11 +1,11 @@
 #include <iostream>
-#include "add.h"
+#include <string>
 using namespace std;
-int main(){
-    int a = 4;
-    int b = 8;
-    int c = add(a, b);
-    cout << c << endl;
+int main()
+{
+    string name;
+    cin >> name;
+    cout << name << endl;
     system("pause");
     return 0;
 }
