@@ -1,38 +1,56 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main()
-{
-    string name;
-    cin >> name;
-    cout << name << endl;
-    for (int i = 0; i < 3; i++)
-    {
-        cout << name << endl;
-    }
-    int chance;
-    cin >> chance;
-    switch (chance)
-    {
-    case 1:
-        cout << "hello world" << endl;
-        break;
-    case 2:
-        for (int i = 0; i < 9; i++)
-        {
-            for (int j = 0; j < 3; j++)
-            {
-                cout << name << endl;
-            }
-        }
-        break;
-    case 3:
-        cout << "xiaosishushule" << endl;
-        break;
-    default:
-        cout << "haha" << endl;
-    }
+
+// class Score;
+// class Student
+// {
+// private:
+//     string name;
+//     int number;
+
+// public:
+//     Student(string na, int nu)
+//     {
+//         name = na;
+//         number = nu;
+//     }
+//     void show(Score &sc);
+// };
+// class Score
+// {
+// private:
+//     int mid_exam;
+//     int fin_exam;
+
+// public:
+//     Score(int m, int f)
+//     {
+//         mid_exam = m;
+//         fin_exam = f;
+//     }
+//     friend void Student::show(Score &sc);
+// };
+// void Student::show(Score &sc)
+// {
+//     cout << name << number << endl;
+//     cout << sc.mid_exam << sc.fin_exam << endl;
+// }
+// int main()
+// {
+//     Score sc(89, 99);
+//     Student st("白", 12467);
+//     st.show(sc);
+//     return 0;
+// }
+// 友元
+// 虚基类的声明 菱形继承
+// class Base1:virtual public Base{}
+// 虚函数
+// template <class T>
+// T add(T x, T y){
+//     return x + y;
+// }
+class Student{
     
-    system("pause");
-    return 0;
-}
+};
